@@ -1,0 +1,381 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion 3</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+<!--------------------------------------->
+
+    
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/popo13.jpg','imagenes/popo9.jpg','imagenes/popo1.jpg','imagenes/ley2.jpg','imagenes/popo8.jpg','imagenes/ley4.jpg','imagenes/popo3.jpg','imagenes/popo5.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>Todo Sobre El Volcan Popocatepetl </h1>
+    </div>
+<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/popo1.jpg" alt="popo1" title="popo1" id="wows1_0"/></li>
+<li><img src="visor/data1/images/popo2.jpg" alt="popo2" title="popo2" id="wows1_1"/></li>
+<li><img src="visor/data1/images/popo6.jpg" alt="popo6" title="popo6" id="wows1_2"/></li>
+<li><img src="visor/data1/images/popo3.jpg" alt="popo3" title="popo3" id="wows1_3"/></li>
+<li><img src="visor/data1/images/popo5.jpg" alt="popo5" title="popo5" id="wows1_4"/></li>
+<li><img src="visor/data1/images/ley2.jpg" alt="ley2" title="ley2" id="wows1_5"/></li>
+<li><img src="visor/data1/images/popo9.jpg" alt="popo9" title="popo9" id="wows1_6"/></li>
+<li><img src="visor/data1/images/popo4.jpg" alt="popo4" title="popo4" id="wows1_7"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="popo1"><img src="visor/data1/tooltips/popo1.jpg" alt="popo1"/>1</a>
+<a href="#" title="popo2"><img src="visor/data1/tooltips/popo2.jpg" alt="popo2"/>2</a>
+<a href="#" title="popo6"><img src="visor/data1/tooltips/popo6.jpg" alt="popo6"/>3</a>
+<a href="#" title="popo3"><img src="visor/data1/tooltips/popo3.jpg" alt="popo3"/>4</a>
+<a href="#" title="popo5"><img src="visor/data1/tooltips/popo5.jpg" alt="popo5"/>5</a>
+<a href="#" title="ley2"><img src="visor/data1/tooltips/ley2.jpg" alt="ley2"/>6</a>
+<a href="#" title="popo9"><img src="visor/data1/tooltips/popo9.jpg" alt="popo9"/>7</a>
+<a href="#" title="popo4"><img src="visor/data1/tooltips/popo4.jpg" alt="popo4"/>8</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">jQuery Carousel</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+<div>
+	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>¿Cual es su Ubicacion?</h2>
+    	<p>Se muestra información sobre el volcan Popocatepetl</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Tamaño del Volcan?</h2>
+        <p>Se muestra información sobre el volcan Popocatepetl</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Antigüedad</h2>
+        <p>Se muestra información sobre el volcan Popocatepetl</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Leyenda sobre su creacion</h2>
+        <p>Se muestra información sobre el volcan Popocatepetl e Iztaccihuatl</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Actividad volcanica</h2>
+        <p>Se muestra información sobre el volcan Popocatepetl</p>
+        </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Monitoreo</h2>
+        <p>Se muestra información sobre el volcan Popocatepetl</p>
+        </a>
+    </li>
+          <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Medidas en caso de caida de ceniza y explosion</h2>
+        <p>Se muestra información sobre las medidas ha tomar</p>
+        </a>
+    </li>
+          <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Estados a los que afecta </h2>
+        <p>Se muestra información sobre el volcan Popocatepet</p>
+        </a>
+    </li>
+    </ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+	<div>
+    	<img src="imagenes/popo1.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Jean Karlo Jimenez Contreras</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Cual es la ubicacion de el volcan Popocatépetl?</h1>
+  </div>
+   <div data-role="content" align="center">
+   <div>
+   <h3></h3>
+   <p>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’)? es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala</p>
+   <p>.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('popo','','imagenes/popo13.jpg',1)"><img src="imagenes/popo12.gif" width="150" height="180" id="popo"></a><br>
+   </p>
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4> Aplicacion Tres,JKJC</h4>
+   </div>
+</div>
+   </div>
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Tamaño del volcan Popocatétl?</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <p>De apariencia casi simétrica, cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros.
+El paisaje en la zona que rodea al Popocatépetl contiene varios tipos de ecosistemas con rica variedad de flora y fauna. Hay bosques mixtos de pino, oyamel y encino, donde coexisten hasta 1,000 especies de plantas. Sobre el cono, principalmente cerca de la boca, se encuentran glaciares que durante los últimos años han disminuido.</p>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('popo','','imagenes/popo9.jpg',1)"><img src="imagenes/popo4.jpg" width="50%" height="50%" id="popo2"></a></p>
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres, JKJC</h4>
+   </div>
+   </div>
+   </div>
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-back-btn-text="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Antigüedada</h1>
+   </div>
+   <div data-role="content" align="center">
+    <p>El Popocatépetl surgió a finales del Cenozoico, en el plioceno por lo que aproximadamente tiene 5 millones de años de edad. En conjunto con el Iztaccíhuatl forman una "asociación volcánica o sistema binario volcánico"</p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/popo1.jpg',1)"><img src="imagenes/popo10.jpg" width="274" height="184" id="Image15"></a> </p>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres, JKJC</h4>
+   </div>
+   </div>
+</div>
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Leyenda?</h1>
+   </div>
+   <div data-role="content" align="center">
+   
+<h2>Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.
+Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.</h2>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/ley2.jpg',1)"><img src="imagenes/ley1.jpg" width="404" height="235" id="Image11"></a></p>
+
+   </div>
+     <div data-role="footer" data-theme="a">
+   <h4>Aplicación Tres, JKJC</h4>
+   </div>
+   </div>
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Actividad Volcanica</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <p>Ha tenido por lo menos cuatro erupciones explosivas que colapsaron el cono, dando como resultado enormes derrumbes prehistóricos de enormes proporciones.</p>
+   <p>Hace 14,000 años ocurrió una gran erupción que produjo abundantes lluvias de ceniza y piedra pómez. Durante los siguientes12 milenios han sucedido por lo menos seis grandes erupciones explosivas. La última gran erupción ocurrió aproximadamente entre los años 800 y 1,000 de nuestra era.</p>
+   <ul>
+     <li>1363 Comienza a humear.</li>
+     <li>1509</li>
+     <li>1512</li>
+     <li>1519 y 1528 arroja humo, cenizas y piedras incandescentes.</li>
+     <li>1530 produce solo humo.</li>
+     <li>1539 lanza grandes llamas, piedras y cenizas.</li>
+     <li>1562.</li>
+     <li>1570 Para este año incrementó la actividad sísmica.</li>
+     <li>1571 Arrojó gran cantidad de cenizas.</li>
+     <li>1592 Arrojó vapores y cenizas.</li>
+     <li>1642.</li>
+     <li>1663 Arroja gran cantidad de ceniza y con ella piedras pómez.</li>
+     <li>1664.</li>
+     <li>1665 Estuvo arrojando cenizas por varios días.</li>
+     <li>1697 Hizo una erupción de fuego.</li>
+     <li>1720 Registró una nueva erupción.</li>
+     <li>1790, 1802 y 1804 Arrojaba una columna de humo.</li>
+     <li>1919: La erupción registrada en este año fue considerada por algunos como consecuencia de una explosión de dinamita provocada para la extracción de azufre. Los orígenes de esta actividad la inició Hernán Cortés en 1519 cuando mandó a Diego de Ordaz a que subiera el Popo pero no logró alcanzar el cráter; en cambio al año siguiente otros soldados sacaron azufre para fabricar pólvora.</li>
+     <li>En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad.</li>
+     <li>A lo largo de 1992 y 1993 aumentaron las fumarolas y los microsismos.</li>
+     <li>21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes, llegando llegaron más allá del Estado de Puebla. Cabe señalar que en este año los monasterios del siglo XVI construidos en las laderas del volcán, fueron declarados Patrimonio de la Humanidad por la UNESCO.</li>
+     <li>1995 Registro una actividad fluctuante.</li>
+     <li>Marzo de 1996: En esta año aumentó la actividad y se formó un domo en el cráter.</li>
+     <li>30 de abril de 1996, El popo lanza una lluvia de piedras incandescentes, provocando la muerte de cinco expertos alpinistas que exploraban el volcán. Durante este año también se registraron varios microsismos.</li>
+     <li>El 30 de junio de 1997 lanzó una fumarola de 8 kilómetros de altura y 50 kilómetros de diámetro.</li>
+     <li>20 de junio del 2003.</li>
+     <li>21 de septiembre del 2003.</li>
+     <li>25 de diciembre de 2005: Se produjo una nueva explosión que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava.</li>
+   </ul>
+   </div>
+   <p>   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/popo8.jpg',1)"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/popo5.jpg',1)"><img src="imagenes/popo11.jpg" width="50%" height="50%" id="Image"></a></p>
+   </div>
+   <div data-role="footer" data-theme="a">
+   <h4>Aplicacion Tres, JKJC</h4>
+   </div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Monitoreo</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+     <p>Para evaluar el estado de actividad y riesgo de un volcán, el Cenapred cuenta con cuatro tipos de monitoreo: visual, sísmico, geodésico y geoquímico. Un total de 25 estaciones remotas se encuentran ubicadas en las faldas del volcán, algunas a 2 kilómetros del cráter.El equipo de medición incluye sismógrafos triaxiales de periodo corto, de banda ancha y 4 inclinómetros biaxiales para medir la deformación. De acuerdo al Cenapred, los instrumentos de medición sísimica son los más importantes. También se cuenta con una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para medir concentraciones de dióxido de azufre y dióxido de carbono.Un puesto central recibe más de 50 señales de telemetría y monitorea la actividad del volcán las 24 horas del día. En caso de existir una actividad sísmica importante, el Cenapred activa una alarma acústica y envía mensajes automatizados a dispositivos móviles y localizadores del personal de guardia.El Cenapred también cuenta con un sistema automatico de detencion de flujos ubicado en la ladera norte del Popocatépetl. Dos estaciones de medición monitorean la actividad en cada una de las barrancas que descienden del glaciar. Estas fueron instaladas como proyecto en conjunto con el U.S. Geological Survey.</p>
+     <p><img src="imagenes/ley3.jpg" width="527" height="288" alt="minitoreo"></p>
+    </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres, JCJK</h4>
+   </div>
+   </div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Medidas en caso de ceniza y explocion</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Que hacer en caso de caida de Ceniza</h1>
+          <div>
+            <ol>
+              <li><strong>Por qué es peligrosa: </strong>La ceniza volcanica  puede genera irritación de las vías respiratorias e infección en los ojos, incluso cuando las partículas son de un tamaño menor a 2.5 micras pueden llegar hasta los pulmones, ya que los vellos de la nariz sólo retienen partículas mayores de 10 micras, de acuerdo con Prócoro Gamero Melo, investigador del Centro de Investigación y de Estudios Avanzados (Cinvestav) Unidad Saltillo.<br>
+              </li>
+              <li><strong>Enfermedad: </strong>El investigador de la Sección de Recursos Naturales y Energéticos del Cinvestav Saltillo, dijo que después de una exposición prolongada podría generar enfermedades como la <strong>silicosis</strong>, una enfermedad pulmonar irreversible que se desarrolla por la inhalación continua de partículas de polvo que entran al organismo por las vías respiratorias, desencadenando la fibrosis nodular de los pulmones, en donde, el tejido pulmonar blando se vuelve fibroso afectando la respiración.<br>
+                <br>
+                Gamero Melo recomendó estudiar las propiedades fisicoquímicas de la ceniza del volcán Popocatépetl para conocer que tan grave podrían ser sus efectos en la salud. Ya que en ocasiones está constituida de partículas muy pequeñas de sílice y silicoaliminatos que desatan ese mal común en mineros.<br>
+              </li>
+              <li><strong>Resguardo: </strong>Por lo anterior, las autoridades recomiendan que te mantengas en el interior de la casa, oficina u automóvil en caso de caída intensa y evitar hacer ejercicio al aire libre</li>
+            </ol>
+            <ol>
+              <li value="4"><strong>Protección: </strong>Si es necesario salir a la intemperie debes proteger ojos, nariz y boca, utilizar mascarilla o trapo húmedo. Usar lentes que protejan los ojos, si se usan lentes de contacto se deben retirar.<br>
+              </li>
+              <li value="5"><strong>Irritación: </strong>Si entra ceniza en los ojos, debes lavarlos con abundante agua y acudir a cualquier centro de salud. La ceniza volcánica también puede provocar irritación en la piel, por lo que se sugiere utilizar ropa con manga larga.              </li>
+              <li value="6"><strong>Comida: </strong>No dejes al intemperie alimentos de consumo humano ni de mascotas. Si ha caído ceniza en frutas y vegetales debes lavarlos perfectamente antes de consumirlos<br>
+              </li>
+              <li value="7"><strong>Sella tu casa: </strong>Cierra puertas y ventanas, tapa cualquier depósito de agua. Si cae ceniza en tinacos, cisternas o piletas debe evitarse beberla o utilizarla en la preparación de alimentos. Consumir agua contaminada con metales pesados tiene consecuencias dañinas en los seres vivos, en el largo plazo esto puede resultar en una disminución de capacidades físicas, musculares y neurológicas.<br>
+              </li>
+              <li value="8"><strong>Tu auto: </strong>Cubre aparatos y equipos de automóviles ya que el material volcánico puede dañar motor. Los autos expuestos a ella, dañando  la pintura pues funciona como abrasivo, por lo que se debe evitar  limpiarlo en seco.<br>
+              </li>
+              <li value="9"><strong>Retira la ceniza: </strong>Evita la acumulación de ceniza en techos y en las calles. La ceniza tiene ciertas propiedades &ldquo;cementantes&rdquo;, lo que puede originar la formación de una capa de este material en las tuberías provocando obstrucciones e inundaciones. Cúbre tus ojos y nariz, humedécela y bárrela. Colócala en bolsas de plástico y costales, cada delegación se encargará de recogerla.<br>
+              </li>
+              <li value="10"><strong>Drenaje: </strong>Cubre coladeras para evitar que se tape el drenaje. Las sales metálicas contenidas en ella se disuelven y se van hacia los arroyos, a su vez  esta agua si se utiliza para el riego de hortalizas u otras plantas, los metales se van acumulando en ellas y de esta manera pueden incorporarse al ciclo alimenticio de los animales y seres humanos</li>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/ley4.jpg',1)"><img src="imagenes/popo5.jpg" width="50%" height="50%" id="Image8"></a><br>
+              </li>
+            </ol>
+            <p>&nbsp;</p>
+          <br>
+          </div>
+       <div></div>
+         </div>
+         <div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Que hacer en caso de explosion volcanica</h1>
+          <div>
+          <p></p>
+          <ul>
+            <li>Mantente alejado de volcanes activos.</li>
+          </ul>
+          <ul>
+            <li>Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.</li>
+          </ul>
+          <ul>
+            <li>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.</li>
+          </ul>
+          <ul>
+            <li>Evacua siguiendo las recomendaciones de las <strong>autoridades</strong> para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.</li>
+          </ul>
+          <ul>
+            <li>Evita zonas de ríos y regiones bajas.</li>
+          </ul>
+          <ul>
+            <li>Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una <strong>máscara de emergencia</strong> o envuélvete la cara con un paño húmedo.</li>
+          </ul>
+          <ul>
+            <li>Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la <strong>ceniza</strong> entre en la casa.</li>
+          </ul>
+          <ul>
+            <li>Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección</li>
+          </ul>
+          <ul>
+            <li>La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los <strong>55 kilómetros</strong> por hora.</li>
+          </ul>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/popo3.jpg',1)"><img src="imagenes/popo11.jpg" width="50%" height="50%" id="Image9"></a><br>
+          </div>
+       <div></div>
+         </div>
+         </div>
+         </div>
+         </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres, JCJK</h4>
+   </div>
+   </div>
+  
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-back-btn-text="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Estados afectados por el volcan</h1>
+   </div>
+   <div data-role="content" align="center">
+    <p> </p>
+    <p><img src="imagenes/popo6.jpg" width="383" height="187" alt="popo6"></p>
+    <p>Los pobladores que viven cerca del Volcán Popocatépetl como es el caso de Puebla tienen que estar pendientes al semáforo de alerta volcánica.<br>
+      1.Estado de México<br>
+      2. Puebla<br>
+      3. Morelos<br>
+     4. Tlaxcala</p>
+    <p><img src="imagenes/popo13.jpg" width="339" height="154" alt="popo12"></p>
+  </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres, JKJC</h4>
+   </div>
+   </div>
+</div>
+</body>
+</html>
